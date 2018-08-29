@@ -1,0 +1,30 @@
+#include "/home/stickybits/.colors/material"
+
+! font
+xterm*faceName: terminus:size=11
+
+! scrollback buffer
+XTerm.vt100.saveLines: 5000
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 8
+
+! screen settings
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 160
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! urxvt
+URxvt.font: xft:Inconsolata\ for\ Powerline:size=11
+! URxvt.letterSpace: -1
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true

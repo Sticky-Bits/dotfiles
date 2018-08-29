@@ -1,0 +1,20 @@
+#!/bin/bash
+
+wallpaper_directory=~/Pictures/wallpapers/delaunay
+
+# Check if randwall is in PATH
+[[ $(type -P "randwall") ]] ||
+	{ echo "ERROR: randwall is not in PATH." 1>&2; exit 1; }
+
+# Check if randwall is executable
+[[ -x randwall ]] ||
+	{ echo "ERROR: randwall is in PATH, but not executable." 1>&2; exit 1; }
+
+# Create wallpaper directory if it doesn't exist
+mkdir -p $wallpaper_directory
+cd $wallpaper_directory
+
+for i in {1..100}; do
+	randwall > $i.svg
+done
+exit 0
