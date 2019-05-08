@@ -13,6 +13,7 @@ alias ls='ls --color=auto'
 alias wf='cd ~/work/workforce && pipenv shell'
 alias com='cd ~/work/compliance'
 alias vi='vim'
+alias shutdown='echo "logout" $(date +"%c") >> ~/.login_history.log && shutdown now'
 
 source ~/git-completion.bash
 PS1='[\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]]\$ '
